@@ -9,7 +9,7 @@ interface EditableFunctions {
 
 async function handleUserCommand(message: string,{ updateStyle, updateContent }: EditableFunctions): Promise<void> {
   try {
-    const openaiApiKey = process.env.OPEN_AI_KEY;
+    const openaiApiKey = import.meta.env.VITE_OPENAI_API_KEY;
     const openai = new OpenAI({
         apiKey: openaiApiKey,
         dangerouslyAllowBrowser: true

@@ -82,7 +82,7 @@ function MenuBar({onSend }: MenuBarProps) {
                 <a
                   className="nav-link"
                   aria-current="page"
-                  href="../src/documents/DONG_JASON_RESUME.docx.pdf"
+                  href="/documents/DONG_JASON_RESUME.docx.pdf"
                   target="_blank"
                 >
                   info
