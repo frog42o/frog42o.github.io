@@ -4,7 +4,6 @@ import Projects from "./components/Projects";
 import SocialMedia from "./components/SocialMedia";
 import TitlePage from "./components/TitlePage";
 import WebsiteEnd from "./components/WebsiteEnd";
-import CustomizeAI from "./components/CustomizeAI";
 import {useState} from "react";
 import  handleUserCommand from "./components/scripts/ChatHelper";
 
