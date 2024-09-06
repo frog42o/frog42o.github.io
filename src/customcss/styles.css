@@ -1,0 +1,206 @@
+:root {
+  --border-color: #e0e0e0; 
+  --font-variant: small-caps;
+  --primary-color: #dd7d7d;
+}
+
+/* GENERAL USAGE */
+body, button, textarea {
+  font-variant: var(--font-variant);
+  background-color: var(--border-color);
+}
+
+.text-opacity {
+  opacity: 0.7;
+}
+
+.primary-theme {
+  background-color: var(--primary-color);
+  border: 5px solid #fff;
+  color: #000;
+}
+
+.secondary-theme {
+  background-color: var(--border-color);
+}
+
+.ol {
+  outline: auto;
+}
+
+.primary-border {
+  border: 5px solid #fff;
+}
+
+/* TITLEPAGE STYLE */
+.title-descripton{
+  color:black
+}
+.project-button {
+  width: 10rem; 
+  text-align: center; 
+  background-color: #ffffff;
+  color: #313131; 
+  border-color: #f5ebeb; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.project-button:hover {
+  background-color: lightgray;
+  border-color: #f5ebeb;
+  color: black;
+  transform: scale(1.05); 
+}
+
+/* SOCIAL MEDIA STYLE */
+.social-media-icon {
+  margin-bottom: 25px;
+  position: relative;
+  top: 0.7rem;
+}
+
+.social-media-container {
+  position: absolute;
+  top: 8rem;
+  left: 0.35rem;
+  border: 4px solid #fff;
+  background-color: var(--primary-color);
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+/* AI BOX */
+.ai-box {
+  position: absolute;
+  top: 3.5rem;
+  right: 3rem;
+  border: 4px solid #000;
+  background-color: var(--primary-color);
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  z-index: 2000;
+  
+}
+
+.ai-box::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 5rem;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #000;
+}
+
+.freezeAIBox {
+  position: fixed;
+  top: 1;
+  background-color: var(--primary-color);
+  color: black;
+  padding: 15px 20px;
+  z-index: 1001;
+}
+
+/* PROJECT STYLE */
+.projectContentDisplay {
+  margin-left: 5rem;
+  margin-right: auto;
+}
+
+.projectImageDisplay {
+  margin-left: 8rem;
+  margin-right: auto;
+}
+
+.projectGrid {
+  display: block;
+}
+
+/* NAVBAR */
+.dontMove {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  color: black;
+  padding: 15px 20px;
+  z-index: 1000;
+}
+
+.navbar {
+  height: 60px;
+  width: 100%;
+  padding: 15px 20px;
+  background-color: var(--border-color);
+  transition: all 0.3s ease;
+}
+
+/* ABOUT ME / SKILLS STYLE */
+.aboutmeDiv, .skillsDiv {
+  margin-left: 5rem;
+  margin-right: auto;
+}
+
+.skill {
+  background-color: rgba(196, 196, 196, 0.3);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  color: black;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.aboutme-header h2 {
+  text-align: center;
+  position: relative;
+}
+
+.aboutme-header h2::after {
+  content: '';
+  display: block;
+  width: 1.5rem;
+  height: 0.1rem;
+  background-color: #000;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5px;
+}
+
+.aboutme-header h2 .description {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.aboutme-mainbox {
+  margin-top: 3rem;
+}
+
+/* FOOTER / WEBSITE END */
+.website-end {
+  height: 1vh;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  font-size: 12px;
+}
