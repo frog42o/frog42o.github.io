@@ -1,4 +1,4 @@
-import OpenAI from "openai";
+
 
 interface EditableFunctions {
   // Add specific functions
@@ -9,22 +9,19 @@ interface EditableFunctions {
 
 async function handleUserCommand(message: string,{ updateStyle, updateContent }: EditableFunctions): Promise<void> {
   try {
-    const openaiApiKey = import.meta.env.VITE_OPENAI_API_KEY;
-    const openai = new OpenAI({
-        apiKey: openaiApiKey,
-        dangerouslyAllowBrowser: true
+    const response = await fetch("https://website-portfolio-backend.herokuapp.com/api/openai/generate", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },  
+      body: JSON.stringify({ prompt: message }),
     });
  
-    const response = await openai.chat.completions.create({
-      model: "gpt-3.5-turbo",
-      messages: [{ role: 'user', content: message }],
-      max_tokens: 150,
-      temperature: 0.7,
-    });
-    const chatResponse = response.choices[0]?.message?.content;
-    console.log("a response has been generated! please view this message: " + chatResponse);
-    if (chatResponse) {
-        applyChanges(chatResponse, updateStyle, updateContent);
+    const data = await response.text()
+
+    console.log("a response has been generated! please view this message: " + data);
+    if (data) {
+        applyChanges(data, updateStyle, updateContent);
     }
   } catch (error) {
     console.error("Error with ChatGPT API:", error);

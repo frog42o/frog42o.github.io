@@ -12,7 +12,7 @@ function TitlePage({ style, content }: TitlePageProps) {
         <div className="col-md-12 text-center">
           <h1 className="display-3 mb-4">jason dong</h1>
           <p className="title-descripton mb-4">
-            {content ||"i can finally claim full-stack developer now..."}
+            {content ||"welcome to my portfolio! (pls hire me pls pls pls)"}
           </p>
           <a href="#projects">
             <p className="btn project-button">projects</p>
