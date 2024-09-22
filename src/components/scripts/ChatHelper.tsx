@@ -1,4 +1,4 @@
-
+import axios from "axios";
 
 interface EditableFunctions {
   // Add specific functions
@@ -9,15 +9,20 @@ interface EditableFunctions {
 
 async function handleUserCommand(message: string,{ updateStyle, updateContent }: EditableFunctions): Promise<void> {
   try {
-    const response = await fetch("https://website-portfolio-backend.herokuapp.com/api/openai/generate", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },  
-      body: JSON.stringify({ prompt: message }),
-    });
- 
-    const data = await response.text()
+    console.log(message);
+
+    const response = await axios.post(
+      "https://website-portfolio-backend.herokuapp.com/api/openai/generate",
+      {
+        prompt: message,
+      },
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    const data = await response.data;
 
     console.log("a response has been generated! please view this message: " + data);
     if (data) {
