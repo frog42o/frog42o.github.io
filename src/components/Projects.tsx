@@ -58,8 +58,8 @@ function Projects() {
       >
         well.. your looking at it!
       </ProjectChildren>
-      <ProjectChildren name="spotify project" src="">
-        coming soon...
+      <ProjectChildren name="cavalier connect" src="https://pma-b11-609ff8c02e6c.herokuapp.com/">
+        a pma web application that utilizes django, s3 file storage, google auth, and other api endpoints.
       </ProjectChildren>
     </div>
   );

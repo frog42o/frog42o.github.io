@@ -8,7 +8,7 @@ interface CustomizeAIProps {
     const [input, setInput] = useState<string>("");
 
     const components = ['TitlePage', 'AboutMe', 'MenuBar', 'SocialMedia', 'WebsiteEnd','Projects']
-    const properties = ['background color', 'font size']
+    const properties = ['backgroundColor', 'fontSize', 'text']
   
     const handleSubmit = async (e: FormEvent) => {
       e.preventDefault();
