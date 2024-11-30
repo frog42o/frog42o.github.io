@@ -46,11 +46,8 @@ function Projects() {
         <h1 className="mt-2">projects</h1>
         <p>a full overview of my past projects can be found on my github!</p>
       </div>
-      <ProjectChildren
-        name="openai discord integration"
-        src="https://github.com/frog42o/discord-openai-integration"
-      >
-        chat gpt... but discord!
+      <ProjectChildren name="musicfinder2000" src="https://musicfinder2000.netlify.app/">
+      feeling bored? generate some new music today! we use ai and ml and all the good stuff i swear!
       </ProjectChildren>
       <ProjectChildren
         name="website portfolio"
