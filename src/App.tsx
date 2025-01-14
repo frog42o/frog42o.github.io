@@ -9,7 +9,7 @@ import  handleUserCommand from "./components/scripts/ChatHelper";
 
 function App() {
   const [titlePageStyle, setTitlePageStyle] = useState<React.CSSProperties>({});
-  const [titlePageContent, setTitlePageContent] = useState<string>("welcome to my portfolio! (pls hire me pls pls pls)");
+  const [titlePageContent, setTitlePageContent] = useState<string>("welcome to my portfolio!");
   const [aboutMeStyle, setAboutMeStyle] = useState<React.CSSProperties>({});
   const [aboutMeContent, setAboutMeContent] = useState<string>("");
 
