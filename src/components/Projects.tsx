@@ -47,7 +47,7 @@ function Projects() {
         <p>a full overview of my past projects can be found on my github!</p>
       </div>
       <ProjectChildren name="musicfinder2000" src="https://musicfinder2000.netlify.app/">
-      feeling bored? generate some new music today! we use ai and ml and all the good stuff i swear!
+      feeling bored? generate some new music today! we use ai and ml and all the good stuff i swear! (due to spotify deprecating their api, the generation function is no longer functional)
       </ProjectChildren>
       <ProjectChildren
         name="website portfolio"
@@ -55,7 +55,7 @@ function Projects() {
       >
         well.. your looking at it!
       </ProjectChildren>
-      <ProjectChildren name="cavalier connect" src="https://pma-b11-609ff8c02e6c.herokuapp.com/">
+      <ProjectChildren name="cavalier connect" src="https://github.com/frog42o/cavalier-connect">
         a pma web application that utilizes django, s3 file storage, google auth, and other api endpoints.
       </ProjectChildren>
     </div>
